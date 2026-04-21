@@ -1,211 +1,25 @@
 
-  overflow: hidden;
-  border-radius: 34px;
-  background:
-    radial-gradient(circle at 25% 20%, rgba(255, 233, 120, 0.75), transparent 20%),
-    linear-gradient(180deg, #c7ecf9 0%, #a4dcca 45%, #8ecaa4 100%);
-    radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.58), transparent 24%),
-    radial-gradient(circle at 82% 24%, rgba(255, 214, 102, 0.52), transparent 14%),
-    linear-gradient(145deg, #bfe6f7 0%, #b2e1da 48%, #87cda0 100%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 24px 50px rgba(12, 78, 142, 0.18);
-}
-
-.sun-glow {
-.hero-orb {
-  position: absolute;
-  top: 12%;
-  right: 14%;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  filter: blur(6px);
-  opacity: 0.9;
-}
-
-.orb-a {
-  top: 10%;
-  right: 12%;
-  width: 106px;
-  height: 106px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 251, 206, 1) 0%, rgba(255, 218, 95, 0.9) 50%, transparent 72%);
-}
-
-.orb-b {
-  left: -6%;
-  bottom: 18%;
-  width: 170px;
-  height: 170px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0.06) 62%, transparent 74%);
-}
-
-.orb-c {
-  right: -4%;
-  bottom: 10%;
-  width: 140px;
-  height: 140px;
-  background: radial-gradient(circle, rgba(22, 115, 199, 0.22) 0%, rgba(22, 115, 199, 0.02) 64%, transparent 76%);
-}
-
-.floating-card {
-  position: absolute;
-  width: min(280px, calc(100% - 2rem));
-.city-card {
-  top: 8%;
-  left: 6%;
-  z-index: 2;
-}
-
-.energy-card {
-  right: 5%;
-  bottom: 16%;
-  top: 48%;
-  z-index: 2;
-}
-
-.mini-label {
+.floating-card strong {
+  display: block;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
-.solar-field {
 .dashboard-card {
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  bottom: 14%;
-  display: grid;
-  gap: 0.8rem;
-  bottom: 8%;
-  z-index: 1;
-  padding: 1.25rem;
-  border-radius: 24px;
-  background: linear-gradient(180deg, rgba(8, 53, 78, 0.88), rgba(8, 44, 64, 0.94));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 42px rgba(8, 44, 64, 0.28);
-}
-
-.dashboard-top,
-.energy-stats {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.panel-row {
-.status-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 76px;
-  padding: 0.45rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(25, 165, 111, 0.22);
-  color: #d8fff0;
-  font-size: 0.82rem;
-  font-weight: 800;
-}
-
-.energy-bars {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.8rem;
-  align-items: end;
-  gap: 0.75rem;
-  height: 170px;
-  margin: 1.2rem 0 1rem;
-}
-
-.panel-row span {
-.energy-bars span {
-  display: block;
-  height: 74px;
-  border-radius: 14px;
-  height: var(--bar-height);
-  border-radius: 18px 18px 10px 10px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent),
-    linear-gradient(135deg, #0e5d89, #1e91cf);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
-  transform: perspective(120px) rotateX(24deg);
-    linear-gradient(180deg, rgba(255, 255, 255, 0.24), transparent 35%),
-    linear-gradient(180deg, #39b6f5 0%, #1987d0 55%, #0d5a93 100%);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-}
-
-.energy-stats strong,
-.dashboard-top strong {
-  display: block;
   color: #ffffff;
 }
 
-.cityline {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 33%;
+.dashboard-top strong {
+  font-size: 1.05rem;
+}
+
 .energy-stats span,
 .dashboard-top .mini-label {
   color: rgba(222, 241, 249, 0.82);
-}
-
-.tower {
-.solar-strip {
-  position: absolute;
-  bottom: 0;
-  border-radius: 18px 18px 0 0;
-  background: linear-gradient(180deg, rgba(15, 80, 103, 0.9), rgba(9, 54, 79, 1));
-  left: 9%;
-  right: 9%;
-  bottom: 3.5%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
-  z-index: 0;
-}
-
-.tower-a { left: 14%; width: 74px; height: 150px; }
-.tower-b { left: 31%; width: 100px; height: 205px; }
-.tower-c { right: 28%; width: 86px; height: 175px; }
-.tower-d { right: 12%; width: 120px; height: 240px; }
-.solar-strip span {
-  display: block;
-  height: 38px;
-  border-radius: 12px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent),
-    linear-gradient(135deg, rgba(8, 85, 132, 0.88), rgba(39, 143, 212, 0.95));
-  transform: perspective(120px) rotateX(28deg);
-}
-
-.section-heading {
-  max-width: 720px;
+  .floating-card {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    width: calc(100% - 2rem);
     margin: 1rem;
   }
-
-  .solar-field {
-  .dashboard-card {
-    left: 1rem;
-    right: 1rem;
-    bottom: 1.25rem;
-    bottom: 1rem;
-  }
-
-  .panel-row span {
-    height: 54px;
-  .energy-bars {
-    height: 120px;
-  }
-
-  .tower-a { left: 6%; width: 42px; height: 95px; }
-  .tower-b { left: 24%; width: 64px; height: 130px; }
-  .tower-c { right: 24%; width: 54px; height: 108px; }
-  .tower-d { right: 7%; width: 76px; height: 150px; }
-  .solar-strip {
-    left: 1rem;
-    right: 1rem;
-    bottom: 0.75rem;
-  }
-}
